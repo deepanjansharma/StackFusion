@@ -1,0 +1,85 @@
+<html>
+<head>
+<style>
+#outer
+{
+height:680px;
+width:1480px;
+}
+#top
+{
+height:600px;
+width:1480px;
+background:url("img/e.jpg");
+background-attachment:fixed;
+animation:slider 9s infinite alternate;
+padding-top:100px;
+font-size:40px;
+color:white;
+}
+#right
+{
+min-height:450px;
+width:400px;
+background:rgba(255,255,255,.3);
+margin:25px 50px;
+padding:40px;
+box-sizing:border-box;
+color:white;
+font-weight:bold;
+font-size:18px;
+margin:0vh auto;
+}
+.txt
+{
+height:45px;
+width:100%;
+border-radius:5px;
+margin-bottom:5px;
+border:none;
+padding-left:10px;
+box-sizing:border-box;
+}
+.btn
+{
+background:#031633;
+height:45px;
+width:100%;
+border-radius:5px;
+color:white;
+border:none;
+margin-top:10px;
+}
+@keyframes slider
+{
+0%{
+background:url('img/a.jpg');
+background-size:100% 100%;
+}
+50%{
+background:url('img/b.jpg');
+background-size:100% 100%;
+}
+100%{
+background:url('img/e.jpg');
+background-size:100% 100%;
+}
+}
+</style>
+</head>
+<body>
+<div id="outer">
+<div id="top"><center>Form</center>
+<div id="right">
+<form>
+Name<br/><input type="text" class="txt" required placeholder="Enter Your Name.."/><br/>
+Date of Birth<br/><input type="date" class="txt"/>
+Email<br/><input type="Email" class="txt" required placeholder="Enter Your Email.."/><br/>
+Mobile<br/><input type="number" class="txt" required placeholder="Enter Your Mobile No.."/><br/>
+<input type="submit" class="btn" value="Submit"/>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
